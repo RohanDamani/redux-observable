@@ -5,7 +5,7 @@ const initialState = {
   status: 'idle',
 };
 
-export function beersReducer(state = initialState, action) {
+export default function beersReducer(state = initialState, action) {
   switch (action.type) {
     case SET_STATUS: {
       return {

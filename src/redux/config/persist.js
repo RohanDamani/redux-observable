@@ -1,5 +1,5 @@
 import { ofType } from 'redux-observable';
-import {SET_CONFIG, setConfig} from '../reducers/configActions';
+import {SET_CONFIG, setConfig} from './configActions';
 import {EMPTY, of} from 'rxjs';
 import { ignoreElements, pluck, tap, withLatestFrom } from 'rxjs/operators';
 

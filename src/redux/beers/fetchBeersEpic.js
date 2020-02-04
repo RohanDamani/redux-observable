@@ -16,7 +16,7 @@ import {
   fetchFailed,
   CANCEL,
   reset,
-} from '../reducers/beersActions';
+} from './beersActions';
 import { ofType } from 'redux-observable';
 import { concat, merge, fromEvent, of, race } from 'rxjs';
 const search = (apiBase, perPage, term) =>

@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { BeerList } from './BeersList';
-import { search, cancel } from '../reducers/beersActions';
-import { setConfig } from '../reducers/configActions';
+import { BeerList } from '../components/BeersList';
+import { search, cancel } from '../../redux/beers/beersActions';
+import { setConfig } from '../../redux/config/configActions';
 
 export function Beers(props) {
   const { data, status, messages, cancel, search, config, setConfig } = props;

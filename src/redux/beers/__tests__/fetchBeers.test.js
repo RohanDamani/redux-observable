@@ -1,6 +1,6 @@
 import { TestScheduler } from 'rxjs/testing';
-import { initialState } from '../../reducers/configReducer';
-import { fetchBeersEpic } from '../fetchBeers';
+import { initialState } from '../../config/configReducer';
+import { fetchBeersEpic } from '../fetchBeersEpic';
 import {
   fetchFulfilled,
   setStatus,
@@ -8,7 +8,7 @@ import {
   fetchFailed,
   cancel,
   reset,
-} from '../../reducers/beersActions';
+} from '../beersActions';
 import { of } from 'rxjs';
 
 it('produces correct actions (success)', function() {
