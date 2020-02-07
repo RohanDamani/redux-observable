@@ -2,7 +2,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 
 import { ajax } from 'rxjs/ajax';
 import { combineEpics, createEpicMiddleware } from 'redux-observable';
-import { fetchBeersEpic } from '../beers/fetchBeersEpic';
+import {fetchBeersEpic} from '../beers';
 import beersReducer from '../beers';
 import { configReducer } from './configReducer';
 import { hydrateEpic, persistEpic } from './persist';

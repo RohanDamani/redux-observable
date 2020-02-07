@@ -22,7 +22,7 @@ import { concat, merge, fromEvent, of, race } from 'rxjs';
 const search = (apiBase, perPage, term) =>
   `${apiBase}?beer_name=${encodeURIComponent(term)}&per_page=${perPage}`;
 
-export function fetchBeersEpic(action$, state$, { getJSON, document }) {
+export default function fetchBeersEpic(action$, state$, { getJSON, document }) {
   return action$.pipe(
     ofType(SEARCH),
     debounceTime(500),
